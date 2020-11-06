@@ -2,15 +2,20 @@
     "name": "management",
     "version": "1.0.0",
     "scripts": {
-        "client": "cd client && npm start",
+        "client": "cd client && yarn start",
         "server": "nodemon server.js",
-        "dev": "concurrently --kill-pther-on-fail \"npm server\" \"npm client\""
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
     },
     "dependencies": {
         "body-parser": "^1.19.0",
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "yarn": "^1.22.10"
     },
     "devDependencies": {
-        "concurrently": "5.3.0"
-    }
+        "concurrently": "^5.3.0"
+    },
+    "main": "index.js",
+    "repository": "https://github.com/yhkim47/React-Management-Tutorial.git",
+    "author": "yhkim <yhkim@hunesion.com>",
+    "license": "MIT"
 }
